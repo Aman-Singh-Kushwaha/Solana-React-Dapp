@@ -1,3 +1,6 @@
+# Solana-React-Dapp
+A simple solana wallet connect and disconnect react site
+
 ## Running React on Repl.it
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
