@@ -103,7 +103,10 @@ export default function App() {
 		// checks if phantom wallet exists
     if (solana) {
       try {
-				// ADD DISCONNECT LOGIC HERE
+				solana.disconnect();
+        setWalletKey(undefined);
+        alert("Wallet Disconnected !");
+        console.log("Wallet Disconnected Sucessfully")
       } catch (err) {
           console.log(err);
       }
@@ -130,7 +133,7 @@ export default function App() {
         )}
         {provider && walletKey && (
             <div>
-              <p>{/*FOR WALLET ADDRESS*/}</p>
+              <p>{walletKey}</p> {/* Connected User's Public Key */}
               <button
                 style={{
                   fontSize: "16px",
